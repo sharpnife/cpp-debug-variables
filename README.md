@@ -7,7 +7,7 @@
   To help myself quickly debug variables when prototyping solutions, typically in programming competitions. 
 
 ## Usage
-```
+```cpp
     vector<string> fruits = {"apple", "mango", "orange"};
     debug(fruits); // fruits -> [apple, mango, orange]
     
