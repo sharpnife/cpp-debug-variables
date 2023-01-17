@@ -8,8 +8,8 @@
 
 ## Usage
 ```
-    vector<int> a = {1, 2, 3};
-    debug(a);
+vector<int> a = {1, 2, 3};
+debug(a);
 ```
 > Output
 > 
