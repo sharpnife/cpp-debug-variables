@@ -8,9 +8,9 @@ void debug(const std::string name, const std::vector<std::array<T, N>> &a) {
     for (auto v: a) {
         auto it = v.begin();
         std::cout << ind << ": [";
-        for (int i = 0; i < v.size(); i++) {
+        for (int i = 0; i < (int)v.size(); i++) {
             std::cout << *it;
-            if (i < v.size() - 1) std::cout << ", ";
+            if (i < (int)v.size() - 1) std::cout << ", ";
             std::advance(it, 1);
         }
         std::cout << "]\n";
@@ -28,9 +28,9 @@ void debug(const std::string name, const std::vector<std::vector<std::pair<T, U>
     for (auto v: a) {
         auto it = v.begin();
         std::cout << ind << ": [";
-        for (int i = 0; i < v.size(); i++) {
+        for (int i = 0; i < (int)v.size(); i++) {
             std::cout << "{" << (*it).first << ", " << (*it).second << "}";
-            if (i < v.size() - 1) std::cout << ", ";
+            if (i < (int)v.size() - 1) std::cout << ", ";
             std::advance(it, 1);
         }
         std::cout << "]\n";
@@ -47,9 +47,9 @@ void debug(const std::string name, const std::vector<std::vector<T>> &a) {
     for (auto v: a) {
         auto it = v.begin();
         std::cout << ind << ": [";
-        for (int i = 0; i < v.size(); i++) {
+        for (int i = 0; i < (int)v.size(); i++) {
             std::cout << *it;
-            if (i < v.size() - 1) std::cout << ", ";
+            if (i < (int)v.size() - 1) std::cout << ", ";
             std::advance(it, 1);
         }
         std::cout << "]\n";
@@ -63,9 +63,9 @@ template<typename T, typename U, typename V>
 void debug(const std::string name, const std::map<T, std::pair<U, V>> &a) {
     std::cout << name << " -> [\n";
     auto it = a.begin();
-    for (int i = 0; i < a.size(); i++) {
+    for (int i = 0; i < (int)a.size(); i++) {
         std::cout << "{k: " << (*it).first << ", v: {" << (*it).second.first << ", " << (*it).second.second<< "}}";
-        if (i < a.size() - 1) std::cout << ",";
+        if (i < (int)a.size() - 1) std::cout << ",";
         std::cout << "\n";
         std::advance(it, 1);
     }
@@ -77,9 +77,9 @@ template<typename T, typename U>
 void debug(const std::string name, const std::map<T, U> &a) {
     std::cout << name << " -> [\n";
     auto it = a.begin();
-    for (int i = 0; i < a.size(); i++) {
+    for (int i = 0; i < (int)a.size(); i++) {
         std::cout << "{k: " << (*it).first << ", v: " << (*it).second << "}";
-        if (i < a.size() - 1) std::cout << ",";
+        if (i < (int)a.size() - 1) std::cout << ",";
         std::cout << "\n";
         std::advance(it, 1);
     }
@@ -91,9 +91,9 @@ template<typename T, typename U>
 void debug(const std::string name, const std::set<std::pair<T, U>> &a) {
     std::cout << name << " -> [";
     auto it = a.begin();
-    for (int i = 0; i < a.size(); i++) {
+    for (int i = 0; i < (int)a.size(); i++) {
         std::cout << "{" << (*it).first << ", " << (*it).second << "}";
-        if (i < a.size() - 1) std::cout << ", ";
+        if (i < (int)a.size() - 1) std::cout << ", ";
         std::advance(it, 1);
     }
     std::cout << "]\n";
@@ -103,9 +103,9 @@ void debug(const std::string name, const std::set<std::pair<T, U>> &a) {
 template<typename T, typename U>
 void debug(const std::string name, const std::vector<std::pair<T, U>> &a) {
     std::cout << name << " -> [";
-    for (int i = 0; i < a.size(); i++) {
+    for (int i = 0; i < (int)a.size(); i++) {
         std::cout << "{" << a[i].first << ", " << a[i].second << "}";
-        if (i < a.size() - 1) std::cout << ", ";
+        if (i < (int)a.size() - 1) std::cout << ", ";
     }
     std::cout << "]\n";
 }
@@ -121,9 +121,9 @@ template<typename T>
 void debug(const std::string name, const std::set<T> &a) {
     std::cout << name << " -> [";
     auto it = a.begin();
-    for (int i = 0; i < a.size(); i++) {
+    for (int i = 0; i < (int)a.size(); i++) {
         std::cout << (*it);
-        if (i < a.size() - 1) std::cout << ", ";
+        if (i < (int)a.size() - 1) std::cout << ", ";
         std::advance(it, 1);
     }
     std::cout << "]\n";
@@ -133,9 +133,9 @@ void debug(const std::string name, const std::set<T> &a) {
 template<typename T>
 void debug(const std::string name, const std::vector<T> &a) {
     std::cout << name << " -> [";
-    for (int i = 0; i < a.size(); i++) {
+    for (int i = 0; i < (int)a.size(); i++) {
         std::cout << a[i];
-        if (i < a.size() - 1) std::cout << ", ";
+        if (i < (int)a.size() - 1) std::cout << ", ";
     }
     std::cout << "]\n";
 }
