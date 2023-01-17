@@ -21,7 +21,7 @@
 > **List of supported types**
 > - [All basic types](https://en.cppreference.com/w/cpp/language/types)
 > - vector of basic types
-> - vector pair of basic types
+> - vector of pair of basic types
 > - vector of vector of pair of basic types
 > - vector of vector of basic types
 > - vector of array of basic types ("array" being [c++ arrays](https://en.cppreference.com/w/cpp/container/array))
