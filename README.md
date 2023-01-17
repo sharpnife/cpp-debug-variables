@@ -16,7 +16,7 @@ debug(a);
 > a -> [1, 2, 3]
 
 ## Disclaimer
-  Not all the types are supported, I've priotrized including all the common types which a person typically would use in programming compettions. Feel free to create a PR to include more types. 
+  Not all the types are supported, I've priotrized including all the common types which a person typically would use in programming competitions. Feel free to create a PR to include more types. 
 
 > **List of supported types**
 > - [All basic types](https://en.cppreference.com/w/cpp/language/types)
