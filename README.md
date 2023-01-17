@@ -8,12 +8,12 @@
 
 ## Usage
 ```
-vector<int> a = {1, 2, 3};
-debug(a);
+    vector<string> fruits = {"apple", "mango", "orange"};
+    debug(fruits); // fruits -> [apple, mango, orange]
+    
+    vector<pair<string, int>> nums = {{"one", 1}, {"two", 2}};
+    debug(nums); // nums -> [{one, 1}, {two, 2}]
 ```
-> Output
-> 
-> a -> [1, 2, 3]
 
 ## Disclaimer
   Not all the types are supported, I've priotrized including all the common types which a person typically would use in programming competitions. Feel free to create a PR to include more types. 
